@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESTAURANTE</title>
+    <style>
+        img {
+            width: 250px;
+            height: 200px;
+        }
+        h1 {
+            text-align: center;
+        }
+        h5 {
+            text-align: center;
+        }
+        section {
+            padding-top: 60px;
+            margin-top: -60px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        form {
+            margin-top: 20px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 10px 20px;
+            margin-right: 10px;
+        }
+        nav {
+            background-color: #f8f9fa;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+        }
+        .container {
+            padding-top: 80px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#entradas">Entradas</a></li>
+            <li><a href="#principales">Platos Principales</a></li>
+            <li><a href="#postres">Postres</a></li>
+            <li><a href="#bebidas">Bebidas</a></li>
+            <li><a href="#precios">Tabla de Precios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Menú del Restaurante</h1>
+
+        <h2>______________________________________________________________________________________________________________________________________</h2>
+
+        <section id="entradas">
+            <h4>ENTRADAS</h4>
+            <div>
+                <h4>Ensalada César</h4>
+                <img src="https://cdn7.kiwilimon.com/recetaimagen/36391/960x640/45060.jpg.jpg" alt="Ensalada César">
+                <p>Lechuga, queso parmesano, crutones y aderezo especial.</p>
+            </div>
+            <div>
+                <h4>Sopa de Tomate</h4>
+                <img src="https://cdn0.uncomo.com/es/posts/3/0/9/como_hacer_sopa_de_tomate_casera_25903_orig.jpg" alt="Sopa de Tomate">
+                <p>Tomates frescos con hierbas aromáticas.</p>
+            </div>
+        </section>
+
+        <h2>______________________________________________________________________________________________________________________________________</h2>
+
+        <section id="principales">
+            <h4>PLATOS PRINCIPALES</h4>
+            <div>
+                <h4>Filete de Res</h4>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA2QGBp3UCp1_HWsqPMoAog1oly8p3Lsv9Wg&s" alt="Filete de Res">
+                <p>Acompañado de puré de papas y verduras al vapor.</p>
+            </div>
+            <div>
+                <h4>Pechuga de Pollo</h4>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCMNgfvde7UftfiFljaRfCgGzrvKLm1d85bg&s" alt="Pechuga de Pollo">
+                <p>Pollo a la plancha con ensalada fresca.</p>
+            </div>
+        </section>
+
+        <h2>______________________________________________________________________________________________________________________________________</h2>
+
+        <section id="postres">
+            <h4>POSTRES</h4>
+            <div>
+                <h4>Pastel de Chocolate</h4>
+                <img src="https://www.cocinadelirante.com/800x600/filters:format(webp):quality(75)/sites/default/files/images/2020/03/como-hacer-pastel-de-chocolate-con-cerveza-y-betun.jpg" alt="Pastel de Chocolate">
+                <p>Bizcocho de chocolate con crema de avellanas.</p>
+            </div>
+            <div>
+                <h4>Helado de Vainilla</h4>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpEafRUl_NYQaT6zkKklW75VcsCg3oXgXqlw&s" alt="Helado de Vainilla">
+                <p>Helado cremoso con trozos de galleta.</p>
+            </div>
+        </section>
+
+        <h2>______________________________________________________________________________________________________________________________________</h2>
+
+        <section id="bebidas">
+            <h4>BEBIDAS</h4>
+            <div>
+                <h4>Café</h4>
+                <img src="https://img.chemie.de/Portal/News/63e51e0602b22__KIWXSp9o.png?tr=w-1021,h-766,cm-extract,x-0,y-2:n-xzoom" alt="Café">
+                <p>Café colombiano recién preparado.</p>
+            </div>
+            <div>
+                <h4>Zumo de Naranja</h4>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj--eeYf6-uKRdz1mpO6kYG6ANanpPnxAoMw&s" alt="Zumo de Naranja">
+                <p>Zumo natural de naranjas frescas.</p>
+            </div>
+        </section>
+
+        <h2>______________________________________________________________________________________________________________________________________</h2>
+
+        <section id="precios">
+            <h4>TABLA DE PRECIOS</h4>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Categoría</th>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Entradas</td>
+                        <td>Ensalada César</td>
+                        <td>$5.99</td>
+                    </tr>
+                    <tr>
+                        <td>Entradas</td>
+                        <td>Sopa de Tomate</td>
+                        <td>$4.99</td>
+                    </tr>
+                    <tr>
+                        <td>Platos Principales</td>
+                        <td>Filete de Res</td>
+                        <td>$15.99</td>
+                    </tr>
+                    <tr>
+                        <td>Platos Principales</td>
+                        <td>Pechuga de Pollo</td>
+                        <td>$12.99</td>
+                    </tr>
+                    <tr>
+                        <td>Postres</td>
+                        <td>Pastel de Chocolate</td>
+                        <td>$6.50</td>
+                    </tr>
+                    <tr>
+                        <td>Postres</td>
+                        <td>Helado de Vainilla</td>
+                        <td>$4.50</td>
+                    </tr>
+                    <tr>
+                        <td>Bebidas</td>
+                        <td>Café</td>
+                        <td>$2.50</td>
+                    </tr>
+                    <tr>
+                        <td>Bebidas</td>
+                        <td>Zumo de Naranja</td>
+                        <td>$3.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <h2>______________________________________________________________________________________________________________________________________</h2>
+
+        <section id="contacto">
+            <h4>CONTACTO</h4>
+            <form id="contactForm">
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" placeholder="Nombre">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Email">
+                </div>
+                <div>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" rows="3" placeholder="Mensaje"></textarea>
+                </div>
+                <button type="button" onclick="enviarFormulario()">ENVIAR</button>
+                <button type="button" onclick="resetFormulario()">RESET</button>
+            </form>
+        </section>
+
+        <h2>______________________________________________________________________________________________________________________________________</h2>
+
+        <footer>
+            <h5>© 2025 Restaurante Delicioso. Todos los derechos reservados.</h5>
+        </footer>
+    </div>
+
+    <script>
+        function enviarFormulario() {
+            alert('Formulario enviado');
+        }
+
+        function resetFormulario() {
+            document.getElementById('contactForm').reset();
+        }
+    </script>
+</body>
+</html>
